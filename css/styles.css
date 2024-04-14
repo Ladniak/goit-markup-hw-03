@@ -1,0 +1,385 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: #434455;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: 2%;
+    line-height: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    color: #2E2F42;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: #2E2F42;
+    margin: 0;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: regular;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 4%;
+    text-decoration: none;
+    color: #4D5AE5;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    margin: 0;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+/* ==========This is header========== */
+
+.page-header .flex-box{
+    display: flex;
+    border-bottom: 1px solid #e7e9fc;
+    justify-content: space-between;
+}
+
+.nav-page {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.nav-page .nav-logo {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.nav-page .nav-logo .logo {
+    color: #2E2F42;
+}
+
+.nav-page .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-page .menu .link {
+    display: block;
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+}
+
+.nav-page .link:hover,
+.nav-page .link:focus {
+    color: #404BBF;
+}
+
+.nav-page .link:active {
+    color: #404BBF;
+    text-decoration: underline;
+}
+
+.address {
+    display: flex;
+    font-style: normal;
+}
+
+.address .menu{
+    display: flex;
+    gap: 40px;
+}
+
+.address .menu .link {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding: 24px 0;
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: #404BBF;
+}
+
+/* ==========This is section 1========== */
+
+.first-sec .first-box{
+    display: flex;
+    background: #2E2F42;
+    border: 1px solid #000;
+    flex-direction: column;
+    align-items: center;
+    padding: 188px 472px ;
+    max-width: 100vw;
+}
+
+.first-sec .header {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.first-sec .but {
+    background: #4D5AE5;
+    border: solid #4D5AE5;
+    border-radius: 4px;
+    color: #ffffff;
+    gap: 10px;
+    padding: 16px 32px;
+    flex-direction: row;
+}
+
+.first-sec .but:hover,
+.first-sec .but:focus {
+    background: #404BBF;
+    border: solid #404BBF;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+/* ==========This is section 2========== */
+
+.second-sec .title {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.second-sec .second-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.des-list {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+.des-list .list-li {
+    flex-basis: ((100% - 72px) / 3);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.des-list .par-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.des-list .par {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* ==========This is section 3========== */
+
+.third-sec .third-box{
+    display: flex;
+    background: #F4F4FD;
+    max-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-sec .title {
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-top: 120px;
+}
+
+.third-box .team-list {
+    display: flex;
+    margin: 72px 156px 120px 156px ;
+    gap: 24px;
+}
+
+.team-list .sec-list {
+    background: #ffffff;
+    flex-basis: calc((100% - 72px) / 3);
+    text-align: center;
+}
+
+.third-sec .sec-list .list-title {
+    padding-top: 32px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.third-sec .sec-list .list-par {
+    letter-spacing: 0.02em;
+
+}
+
+.sec-list .team-border {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    padding: 0px 0px 32px 0px;
+}
+
+/* ==========This is section 4========== */
+
+.fourth-sec .fourth-box {
+    display: flex;
+    max-width: 100vw;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.fourth-sec .title {
+    margin-top: 120px ;
+    margin-bottom: 72px;
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.port-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.port-list .border {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 0 32px 16px;
+}
+
+.port-list .list-title {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.fourth-sec .par {
+    letter-spacing: 0.02em;
+}
+
+.port-list .photo {
+    margin-top: 48px;
+}
+
+/* ==========This is footer========== */
+
+.foot {
+    background: #2E2F42;
+}
+
+.foot .foot-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.box-box .nav-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+}
+
+.box-box {
+    width: 264px;
+    height: 112px;
+}
+
+.box-box .nav-logo .logo{
+    color: #F4F4FD;
+}
+
+.box-box .par {
+    margin-top: 17.5px;
+    color: #F4F4FD ;
+    letter-spacing: 0.02em;
+}
