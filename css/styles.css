@@ -89,16 +89,18 @@ img {
 
 /* ==========This is header========== */
 
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header .flex-box{
     display: flex;
-    border-bottom: 1px solid #e7e9fc;
     justify-content: space-between;
 }
 
 .nav-page {
     display: flex;
     align-items: center;
-    gap: 76px;
 }
 
 .nav-page .nav-logo {
@@ -109,6 +111,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px
 }
 
 .nav-page .nav-logo .logo {
@@ -166,14 +169,16 @@ img {
 
 /* ==========This is section 1========== */
 
+.first-sec {
+    padding: 188px 0;
+    background: #2E2F42;
+    max-width: 100vw;
+}
+
 .first-sec .first-box{
     display: flex;
-    background: #2E2F42;
-    border: 1px solid #000;
     flex-direction: column;
     align-items: center;
-    padding: 188px 472px ;
-    max-width: 100vw;
 }
 
 .first-sec .header {
@@ -185,41 +190,48 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .first-sec .but {
     background: #4D5AE5;
-    border: solid #4D5AE5;
+    border: none;
     border-radius: 4px;
     color: #ffffff;
     gap: 10px;
     padding: 16px 32px;
     flex-direction: row;
+    min-width: 169px;
+    height: 56px;
 }
 
 .first-sec .but:hover,
 .first-sec .but:focus {
     background: #404BBF;
-    border: solid #404BBF;
+    border: none;
     text-align: center;
     letter-spacing: 0.04em;
 }
 
 /* ==========This is section 2========== */
 
+.second-sec {
+    padding: 120px 0;
+}
+
 .second-sec .title {
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.02em;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    display: none;
+    visibility: hidden;
+    position: absolute;
 }
 
 .second-sec .second-box {
     display: flex;
     justify-content: flex-start;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    flex-direction: column;
 }
 
 .des-list {
@@ -229,7 +241,7 @@ img {
 }
 
 .des-list .list-li {
-    flex-basis: ((100% - 72px) / 3);
+    width: calc((100% - 72px) / 4);
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -241,6 +253,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .des-list .par {
@@ -253,12 +266,15 @@ img {
 
 /* ==========This is section 3========== */
 
-.third-sec .third-box{
-    display: flex;
+.third-sec {
     background: #F4F4FD;
-    max-width: 100vw;
+    padding: 120px 0;
+    max-width: 100%vw;
+}
+
+.third-sec .third-box {
+    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .third-sec .title {
@@ -268,49 +284,50 @@ img {
     text-transform: capitalize;
     font-weight: 500;
     letter-spacing: 0.02em;
-    margin-top: 120px;
+    margin-bottom: 72px;
 }
 
-.third-box .team-list {
+.team-list {
     display: flex;
-    margin: 72px 156px 120px 156px ;
     gap: 24px;
+    justify-content: center;
 }
 
 .team-list .sec-list {
-    background: #ffffff;
-    flex-basis: calc((100% - 72px) / 3);
-    text-align: center;
-}
-
-.third-sec .sec-list .list-title {
-    padding-top: 32px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
-.third-sec .sec-list .list-par {
-    letter-spacing: 0.02em;
-
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .sec-list .team-border {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-    padding: 0px 0px 32px 0px;
+    padding: 32px 0;
+}
+
+.third-sec .sec-list .list-title {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.third-sec .sec-list .list-par {
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 
 /* ==========This is section 4========== */
 
+.fourth-sec {
+    padding: 120px 0;
+    max-width: 100vw;
+}
+
 .fourth-sec .fourth-box {
     display: flex;
-    max-width: 100vw;
     flex-direction: column;
-    margin-bottom: 120px;
 }
 
 .fourth-sec .title {
-    margin-top: 120px ;
     margin-bottom: 72px;
     text-align: center;
     line-height: 1.11;
@@ -322,17 +339,24 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
     justify-content: center;
+    margin-bottom: 48px;
 }
 
-.port-list .border {
+.port-list .list {
+    width: calc((100% - 48px) / 3);
+}
+
+.list .border {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
-    padding: 32px 0 32px 16px;
+    padding: 32px 16px;
 }
 
 .port-list .list-title {
+    margin-bottom: 8px;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
@@ -341,45 +365,36 @@ img {
     letter-spacing: 0.02em;
 }
 
-.port-list .photo {
-    margin-top: 48px;
-}
-
 /* ==========This is footer========== */
 
 .foot {
     background: #2E2F42;
+    padding: 100px 0;
 }
 
 .foot .foot-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
-.box-box .nav-logo {
+.foot .nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
-.box-box {
-    width: 264px;
-    height: 112px;
-}
-
-.box-box .nav-logo .logo{
+.foot .nav-logo .logo{
     color: #F4F4FD;
 }
 
-.box-box .par {
-    margin-top: 17.5px;
+.foot .par {
     color: #F4F4FD ;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
