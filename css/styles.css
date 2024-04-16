@@ -392,8 +392,9 @@ img {
     justify-content: flex-start;
 }
 
-.foot .nav-logo {
+.foot .nav-logo-footer {
     display: inline-block;
+    color: #4D5AE5;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -403,8 +404,8 @@ img {
     margin-bottom: 16px;
 }
 
-.foot .nav-logo .logo{
-    color: #F4F4FD;
+.studio {
+    color: #FFFFFF;
 }
 
 .foot .par {
