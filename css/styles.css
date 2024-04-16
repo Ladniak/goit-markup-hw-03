@@ -57,6 +57,7 @@ a {
     letter-spacing: 4%;
     text-decoration: none;
     color: #4D5AE5;
+    display: inline-block;
 }
 
 p {
@@ -392,10 +393,6 @@ img {
     justify-content: flex-start;
 }
 
-a {
-    display: inline-block;
-}
-
 .foot .nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -404,9 +401,11 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .foot .nav-logo .logo{
+    display: inline-block;
     color: #F4F4FD;
 }
 
