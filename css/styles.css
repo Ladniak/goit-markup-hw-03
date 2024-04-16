@@ -57,6 +57,7 @@ a {
     letter-spacing: 4%;
     text-decoration: none;
     color: #4D5AE5;
+    display: inline-block;
 }
 
 p {
@@ -219,13 +220,25 @@ img {
     padding: 120px 0;
 }
 
-.second-sec .title {
+.second-sec .visually-hidden {
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.02em;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    visibility: hidden;
+}
+
+.visually-hidden {
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .second-sec .second-box {
@@ -301,6 +314,7 @@ img {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     padding: 32px 0;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .third-sec .sec-list .list-title {
@@ -385,7 +399,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
     margin-bottom: 16px;
 }
 
