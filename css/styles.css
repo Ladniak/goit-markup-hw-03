@@ -111,7 +111,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px
+    margin-right: 76px;
 }
 
 .nav-page .nav-logo .logo {
@@ -392,7 +392,7 @@ img {
     justify-content: flex-start;
 }
 
-.foot .nav-logo-footer {
+.nav-logo-footer {
     display: inline-block;
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
