@@ -393,6 +393,7 @@ img {
 }
 
 .foot .nav-logo {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -400,7 +401,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 16px;
-    display: inline-block;
 }
 
 .foot .nav-logo .logo{
