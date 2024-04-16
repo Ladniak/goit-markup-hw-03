@@ -57,7 +57,6 @@ a {
     letter-spacing: 4%;
     text-decoration: none;
     color: #4D5AE5;
-    display: inline-block;
 }
 
 p {
@@ -405,7 +404,6 @@ img {
 }
 
 .foot .nav-logo .logo{
-    display: inline-block;
     color: #F4F4FD;
 }
 
